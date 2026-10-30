@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +10,25 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <!--Header-->
     <header>
         <div class="navigation_container">
-            <img src="assets/RainyDays_Logo.png" alt="Rainy Days Logo" class="logo" href>
+            <a href="index.html">
+            <img src="assets/RainyDays_Logo.png" alt="Rainy Days Logo" class="logo">
+            </a>
             <nav>
                 <ul class="navigation_menu">
                     <li><a href="index.html"> Home</a></li>
                     <li><a href="products.html"> Products</a></li>
-                    <li><a href="aboutus.html"> About Us</a></li>
+                    <li><a href="comingsoon.html"> About Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,25 +36,129 @@
             <form class="searchbar" action="search.html">
                 <input type="text" id="name" name="searchbar" size="10" placeholder="Search..." />
             </form>
-            <a class="Favorites_icon" aria-label="Favorites">
+            <a class="Favorites_icon" href="" aria-label="Favorites">
                 <img src="assets/favorites_icon.svg"></a>
-            <a class="Profile_icon" aria-label="Profile">
+            <a class="Profile_icon" href="" aria-label="Profile">
                 <img src="assets/profile_icon.svg" alt=""> </a>
-            <a class="Cart_icon" aria-label="cart">
-                <img= src="assets/cart_icon.svg" alt="">
+            <a class="Cart_icon" href="" aria-label="cart">
+                <img src="assets/cart_icon.svg" alt="">
             </a>
         </div>
     </header>
+    <main>
+    <!--Promo banner-->
     <section class="promo_banner">
         <p>FREE SHIPPING AND RETURNS FOR MEMBERS</p>
     </section>
+    <!--HERO SECTION-->
     <section class="hero">
         <img src="assets/karl-hedin-MlOfRf86J2s-unsplash.jpg" alt="Hero image - people hiking on a mountain." />
         <div class="hero_content">
             <h1>PUSHING THE COMFORT ZONE</h1>
             <p>Life Happens Outside</p>
-            <a href="products.html" class="shop_jackets_button">Shop Jackets</a>
+            <a href="products.html" class="shop_jackets_button">SHOP JACKETS</a>
         </div>
     </section>
+    <!--Product display-->
+    <section class="product_display">
+        <div class="display_header">
+            <h2>Best Selling Jackets</h2>
+            <a href=products.html class="show_more">Show more></a>
+        </div>
+        <!--Product grid-->
+            <ul class="product_display_grid">
+                <li class="product_card">
+                    <img src="assets/RainyDays_Jacket7.png" alt="Rainy Days classic Fleece Jacket">
+                    <h3>classic fleece <span class="Color">-Green</span></h3>
+                    <p>£170</p>
+                </li>
+                <li class="product_card">
+                <img src="assets/RainyDays_Jacket5.png" alt="essential jacket">
+                    <h3>Essential Jacket <span class="Color">-Grey</span></h3>
+                    <p>£170</p>
+                </li>
+                <li class="product_card">
+                    <img src="assets/RainyDays_Jacket6.png" alt="heavy biking jacket">
+                    <h3>Heavy Biking Jacket <span class="Color">-Black</span></h3>
+                    <p>£199</p>
+                </li>
+                <li class="product_card">
+                    <img src="assets/RainyDays_Jacket2.png" alt="light weight cycling jacket">
+                    <h3>Light weight cycling Jacket <span class="Color">-Grey</span></h3>
+                    <p>£70</p>
+                </li>
+                <li class="product_card">
+                    <img src="assets/RainyDays_Jacket3.png" alt="athletic jacket">
+                    <h3>Athletic Jacket <span class="Color">-Red</span></h3>
+                    <p>£120</p>
+                </li>
+                <li class="product_card">
+                    <img src="assets/RainyDays_Jacket4.png" alt="outdoor sports jacket">
+                    <h3>Outdoor Sports Jacket <span class="Color">-Black</span></h3>
+                    <p>£170</p>
+                </li>
+                <li class="product_card">
+                    <img src="assets/RainyDays_Jacket1.png" alt="hivis Expedition jacket">
+                    <h3>Hivis Expedition Jacket <span class="Color">-grey</span></h3>
+                    <p>£320</p>
+                </li>
+            </ul>
+    </section> 
+    <section class="footer_img">
+             <img src="assets/pine-watt-unsplash.jpg" alt="image of forest"> 
+                <h3 class="footer_img_content">WATERPROOF, WINDPROOF AND BREATHEABLE JACKETS</h3>
+                <h4 class="footer_img_content">DESIGNED FOR EVERY ADVENTURE</h4>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+           <div class="footer_brand">
+             <a href="index.html">
+               <img src="" alt="rainy days logo">
+             </a>
+             <p>© 2026 RAINYDAYS, LLC. All Rights Reserved. | Privacy Policy |</p>
+           </div>
 
+           <nav aria-labelledby="footer_information">
+            <h3 id="Information">Information </h3>
+            <ul>
+                <li>Order status</li>
+                <li>Returns</li>
+                <li>Shipping</li>
+                <li>FAQ</li>
+                <li>Materials and sourcing</li>
+            </ul>
+           </nav>
+
+           <nav aria-labelledby="rainy_days">
+            <h3>Rainy Days</h3>
+            <ul>
+                <li>About us</li>
+                <li>Work with us</li>
+                <li>contact</li>
+            </ul>
+           </nav>
+
+           <div class="payment_method">
+            <h3>Payment method</h3>
+            <svg id="visa_icon" viewBox="0 8 24 8" role="img" xmlns="http://www.w3.org/2000/svg">
+                <title>Visa icon</title>
+                <path fill="currentcolor"
+                    d="M17.445 8.623c-.387-.146-.99-.301-1.74-.301-1.92 0-3.275.968-3.285 2.355-.012 1.02.964 1.594 1.701 1.936.757.35 1.01.57 1.008.885-.005.477-.605.693-1.162.693-.766 0-1.186-.107-1.831-.375l-.239-.111-.271 1.598c.466.195 1.306.362 2.175.375 2.041 0 3.375-.961 3.391-2.439.016-.813-.51-1.43-1.621-1.938-.674-.33-1.094-.551-1.094-.886 0-.296.359-.612 1.109-.612.645-.01 1.096.129 1.455.273l.18.081.271-1.544-.047.01zm4.983-.17h-1.5c-.467 0-.816.127-1.021.591l-2.885 6.534h2.041l.408-1.07 2.49.002c.061.25.24 1.068.24 1.068H24l-1.572-7.125zM9.66 8.393h1.943l-1.215 7.129H8.444L9.66 8.391v.002zm-4.939 3.929l.202.99 1.901-4.859h2.059l-3.061 7.115H3.768l-1.68-6.026c-.035-.103-.078-.173-.18-.237C1.34 9.008.705 8.766 0 8.598l.025-.15h3.131c.424.016.766.15.883.604l.682 3.273v-.003zm15.308.727l.775-1.994c-.01.02.16-.412.258-.68l.133.615.449 2.057h-1.615v.002z" />
+            </svg>
+
+           </div>
+           <nav aria-labelledby="footer_navigation">
+            <h3 id="footer_Navigation">Navigation</h3>
+            <ul>
+                <li><a href="index.html"> Home</a> </li>
+                <li><a href="products.html"> Products</a></li>
+                <li><a href="comingsoon.html"> About Us </a></li>
+                <li>cart</li>
+                <li><a href="comingsoon.html"> Profile</a></li>
+                <li><a href="comingsoon.html"> Wishlist</a></li>
+            </ul>
+           </nav>
+        </section>
+    </footer>
 </body>
